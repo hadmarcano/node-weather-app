@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp | Forecast ,locations & more...</title>
+    <link rel="stylesheet" href="/./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="contenedor">
+
+    <div class="main-content">
+        {{>header}}
+        <div class="texto">
+            <p>Use this site to get weather information!</p>
+            <form class='form' action="">
+                <input type="text" placeholder="Location">
+                <button>Search</button>
+            </form>
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+        </div>
+    </div>
+    <div class="foot">
+        {{>footer}}
+    </div>
+
+    </div>
+    <script src="/./js/front.js"></script>
+</body>
+</html>
