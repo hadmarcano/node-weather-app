@@ -24,6 +24,7 @@ const weatherForm = document.querySelector('.form');
 const search = document.querySelector('input');
 const messageOne = document.getElementById('message-1');
 const messageTwo = document.getElementById('message-2');
+const messageThree = document.getElementById('message-3');
 
 
 
@@ -41,6 +42,7 @@ weatherForm.addEventListener('submit',(e)=>{
             }else{
                 messageOne.textContent=`${data.ubication}`;
                 messageTwo.textContent=`${data.dataForecast.forecast}`;
+                messageThree.textContent=`${data.dataForecast._humidity}`;
                 document.querySelector('input').value='';
             }
         })

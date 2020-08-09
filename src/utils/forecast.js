@@ -17,6 +17,7 @@ const forecast = ({latitude,longitude}={} ,callback)=>{
              weatherDescription: response.body.current.weather_descriptions[0],
              temperature: response.body.current.temperature,
              feelsTemp: response.body.current.feelslike,
+             _humidity: `Actually is humidity ${response.body.current.humidity}%`,
              forecast: `Actually the weather is ${response.body.current.weather_descriptions[0]} with temperatures arround of ${response.body.current.temperature}°C and feelslike of ${response.body.current.feelslike}°C`
           });
        }
